@@ -18,7 +18,7 @@ def make_pdf(output_path: Path, variant: str):
         rightMargin=18 * mm,
         leftMargin=18 * mm,
         topMargin=18 * mm,
-        bottomMargin=18 * mm,
+        bottomMargin=12 * mm,
     )
 
     styles = getSampleStyleSheet()

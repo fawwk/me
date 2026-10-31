@@ -1,38 +1,42 @@
 # Oche portfolio and CV kit
 
-This folder contains the Oche portfolio site and the two one-page CV PDFs.
+This is a static portfolio site with two downloadable CVs.
 
 ## Files
 
-- `index.html` - the one-page portfolio site
-- `styles.css` - the monochrome design system and layout
-- `script.js` - nav border on scroll and the lead-card animation
-- `config.js` - email, GitHub and site URL placeholders
-- `cv/cv-data.json` - the shared source of truth for both CV PDFs
-- `cv/Philip-Emoche-Ekele-CV-Developer.pdf` - CV A
-- `cv/Philip-Emoche-Ekele-CV-Ops-Leads.pdf` - CV B
+- `index.html` - portfolio markup, styles, scripts and SEO metadata
+- `assets/` - extracted original artwork and the self-hosted Inter font
+- `og.png` - 1200×630 social preview image
+- `cv/Philip-Emoche-Ekele-CV-Developer.pdf` - developer CV
+- `cv/Philip-Emoche-Ekele-CV-Ops-Leads.pdf` - operations and leads CV
+- `cv/cv-data.json` - shared source for the CV PDFs
+- `cv/build_cvs.py` - CV PDF generator
 - `application-email.md` - application email template
 
-## Fill in the placeholders
+## Preview locally
 
-Edit `oche/config.js` and replace the sample values with Philip's real email, GitHub URL and site URL when available.
+From the project root:
 
-## Rebuild the PDFs on Windows / PowerShell
-
-```powershell
-cd .\oche\cv
-python .\build_cvs.py
+```sh
+python3 -m http.server 8000
 ```
 
-## Preview the site locally
+Open `http://localhost:8000`.
 
-```powershell
-cd .\oche
-python -m http.server 8000
+## Rebuild the CVs
+
+Install ReportLab if needed, then run:
+
+```sh
+python3 cv/build_cvs.py
 ```
-
-Then open `http://localhost:8000` in the browser.
 
 ## Deploy
 
-This project is static and can be deployed directly to Cloudflare Pages or Vercel as-is.
+The project is static and ready for Cloudflare Pages:
+
+- Connect the repository in Cloudflare Pages.
+- Set the build command to blank and the build output directory to `.` (the project root).
+- No framework preset or environment variables are required.
+
+The root `404.html`, `robots.txt`, `sitemap.xml`, `site.webmanifest` and `_headers` are included. The same static files can also be deployed to GitHub Pages, Netlify or another static host.
