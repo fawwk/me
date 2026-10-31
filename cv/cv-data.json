@@ -1,0 +1,61 @@
+{
+  "name": "Philip Emoche Ekele",
+  "email": "hello@your-domain.com",
+  "github": "https://github.com/your-github",
+  "siteUrl": "https://your-site-domain.com",
+  "summary": {
+    "developer": "Software builder focused on shipping useful systems for business work: ProofLeads, Termcard and Houseplug. I build automation, bots and operational tools that connect the business problem to a working workflow.",
+    "ops": "I build evidence-based lead systems, Telegram automations and operational workflows that help businesses move faster. My work is focused on outreach, lead verification and business process automation for remote and digital operations."
+  },
+  "projects": [
+    {
+      "name": "ProofLeads",
+      "status": "Live, not yet launched",
+      "bullets": [
+        "Built a Telegram-based leads system that delivers lead details with proof, contact information and pitch guidance.",
+        "Created the pipeline engine, Proofline, using deterministic checks and evidence bundles before a lead is sent.",
+        "Used aiogram + FastAPI, Neon Postgres, Paystack and GitHub Actions on free tiers."
+      ]
+    },
+    {
+      "name": "Termcard",
+      "status": "In development",
+      "bullets": [
+        "Developing an automated result computation and report card tool for schools.",
+        "Managing admin and teacher roles, per-school branding, batch student upload and PDF report generation.",
+        "Using Supabase, Postgres and an agentic workflow to handle versioned grading configuration."
+      ]
+    },
+    {
+      "name": "Houseplug",
+      "status": "In development",
+      "bullets": [
+        "Building a WhatsApp booking bot for students and anyone looking for a room near school.",
+        "Designed a listing and booking flow for students, owners and student scouts.",
+        "Focused on simple user flows for listing homes, booking rooms and rewarding scouts."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Intern, ICT department",
+      "details": "Worked on university web systems and refactored the IJMB portal to work for part-time students."
+    },
+    {
+      "role": "Founder and coordinator, devs club",
+      "details": "Started and ran a devs club with a CS lecturer and classmates, teaching programming and cybersecurity with hands-on practice sessions."
+    }
+  ],
+  "education": [
+    {
+      "title": "Computer Science and Education",
+      "details": "Federal University of Education, Pankshin (FUEP), currently 300 level."
+    }
+  ],
+  "skills": {
+    "Languages": "Python, JavaScript",
+    "Data and backend": "Supabase, Postgres, FastAPI",
+    "Automation and bots": "Telegram bots, aiogram, AI automation, GitHub Actions",
+    "Tools": "Paystack, Cloudflare Pages, Vercel, basic cybersecurity"
+  }
+}
